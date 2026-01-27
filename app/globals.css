@@ -1,26 +1,94 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+    --font-poppins: var(--font-poppins);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@layer components {
+    .hero-bg {
+        background-image: url('/backgrounds/heroSection.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        transform: scale(1);
+    }
+
+    @media (max-width: 640px) {
+        .hero-bg {
+            background-position: center center;
+            transform: scale(1.2);
+            opacity: 0.85;
+        }
+    }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+    .use-case-bg {
+        background-image: url('/backgrounds/useCases.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        transform: scale(1);
+    }
+
+    @media (max-width: 640px) {
+        .use-case-bg {
+            background-position: center center;
+            transform: scale(1.2);
+            opacity: 0.85;
+        }
+    }
+}
+
+@layer components {
+    /* Headings */
+    .heading-1 {
+        @apply
+        text-[32px]
+        sm:text-[48px]
+        lg:text-[56px]
+        leading-[1.2]
+        tracking-tight
+        font-medium
+        font-poppins;
+    }
+
+    .heading-2 {
+        @apply
+        text-[28px]
+        sm:text-[36px]
+        lg:text-[36px]
+        leading-normal sm:leading-snug lg:leading-tight
+        tracking-normal
+        font-medium;
+    }
+
+    /* Body text */
+    .body-text {
+        @apply
+        text-[14px]
+        sm:text-[16px]
+        lg:text-[16px]
+        leading-normal sm:leading-relaxed
+        tracking-normal;
+    }
+
+    /* Small / meta text */
+    .body-small {
+        @apply
+        text-xs
+        sm:text-sm
+        leading-snug
+        tracking-wide;
+    }
+
+    /* Button text */
+    .button-text {
+        @apply
+        font-sans
+        leading-none
+        tracking-wider;
+    }
 }
