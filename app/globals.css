@@ -114,6 +114,24 @@
     }
 }
 
+
+@layer components {
+    .footerImg-bg {
+        background-image: url('/icons/img_2.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+    }
+
+    @media (max-width: 640px) {
+        .footerImg-bg {
+            background-size: contain; /* 👈 shrink on mobile */
+            background-position: center;
+            opacity: 0.85;
+        }
+    }
+}
+
 @layer components {
     /* Headings */
     .heading-1 {

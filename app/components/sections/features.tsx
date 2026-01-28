@@ -59,7 +59,7 @@ const Features = () => {
                         <div className={`absolute inset-0 z-10 feature3-bg`}/>
                         <div className={`w-full md:w-[480px] absolute inset-0 z-20 p-10 flex flex-col justify-between`}>
                             <div className={`flex flex-col gap-y-3`}>
-                                <div className={`text-white font-sans font-medium text-[20px]`}>Built for agents, not jus chat</div>
+                                <div className={`text-white font-sans font-medium text-[20px]`}>Built for agents, not just chat</div>
                                 <div className={`font-sans text-[16px] text-neutral-400`}>
                                     Autonomous execution of multi-step processes
                                 </div>

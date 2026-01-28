@@ -5,7 +5,9 @@ import Integration2 from "@/app/components/sections/integration2"
 import Build from "@/app/components/sections/build"
 import Features from "@/app/components/sections/features"
 import Security from "@/app/components/sections/security"
-import StartUsingAI from "@/app/components/sections/startUsingAI";
+import StartUsingAI from "@/app/components/sections/startUsingAI"
+import Faq from "@/app/components/sections/faq"
+import Footer from "@/app/components/sections/footer"
 
 export default function Home() {
     return (
@@ -18,6 +20,8 @@ export default function Home() {
             <Features/>
             <Security/>
             <StartUsingAI/>
+            <Faq/>
+            <Footer/>
         </div>
     )
 }
