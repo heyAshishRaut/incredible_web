@@ -61,6 +61,60 @@
 }
 
 @layer components {
+    .feature1-bg {
+        background-image: url('/backgrounds/features1.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        transform: scale(1);
+    }
+
+    @media (max-width: 640px) {
+        .feature1-bg {
+            background-position: center center;
+            transform: scale(1.2);
+            opacity: 0.85;
+        }
+    }
+}
+
+@layer components {
+    .feature3-bg {
+        background-image: url('/backgrounds/feature3_2.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        transform: scale(1);
+    }
+
+    @media (max-width: 640px) {
+        .feature3-bg {
+            background-position: center center;
+            transform: scale(1.2);
+            opacity: 0.85;
+        }
+    }
+}
+
+@layer components {
+    .startUsingAI-bg {
+        background-image: url('/backgrounds/startUsingAI.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        transform: scale(1);
+    }
+
+    @media (max-width: 640px) {
+        .startUsingAI-bg {
+            background-position: center center;
+            transform: scale(1.2);
+            opacity: 0.85;
+        }
+    }
+}
+
+@layer components {
     /* Headings */
     .heading-1 {
         @apply

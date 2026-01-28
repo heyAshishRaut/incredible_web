@@ -32,7 +32,7 @@ const UseCases = () => {
                             <div className={`absolute inset-0 use-case-bg`}/>
                             <div className={`h-full w-full`}>
                                 <div className={`absolute h-full w-full flex flex-col p-4`}>
-                                    <div className={`self-end p-3 bg-white/50 w-[70%] md:w-1/2 rounded-[12px] font-sans text-[15px] shadow-[0_6px_16px_rgba(0,0,0,0.08)]`}>
+                                    <div className={`self-end p-3 bg-white/50 w-[80%] md:w-1/2 rounded-[12px] font-sans text-[15px] shadow-[0_6px_16px_rgba(0,0,0,0.08)]`}>
                                         Hey Incredible! Add 50 - Sub-sheets to my weekly tracker spreadsheets
                                     </div>
                                     <div className={`mt-10 p-[6px] rounded-[12px] w-full md:w-[477px] h-[184px] bg-white/50 flex flex-col gap-y-[6px]`}>
@@ -46,10 +46,10 @@ const UseCases = () => {
                                         [mask-image:linear-gradient(to_top,transparent,black_70%,black)]
                                         [-webkit-mask-image:linear-gradient(to_top,transparent,black_70%,black)]
                                         `}>
-                                            <div className={`px-2 h-full w-full grid grid-cols-4 grid-rows-3 gap-[6px]`}>
+                                            <div className={`px-2 h-full w-full grid grid-cols-3 md:grid-cols-4 grid-rows-3 gap-[6px]`}>
                                                 {Array.from({ length: 12 }).map((_, index) => (
-                                                    <div key={index} className={`flex items-center px-2 bg-white border border-gray-300 rounded-full`}>
-                                                        <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <div key={index} className={`flex items-center justify-center gap-x-1 md:gap-x-2 px-2 bg-white border border-gray-300 rounded-full`}>
+                                                        <svg className={`h-5 w-5 md:h-6 md:w-6`} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <g clip-path="url(#clip0_454_14070)">
                                                                 <path d="M9.24783 9.95288H7.29221V8.85743H9.24897V9.95345L9.24783 9.95288ZM11.2046 2.75415V6.19714H14.6476L11.2046 2.75415ZM11.9867 8.85743H10.03V9.95345H11.9867V8.85743ZM11.9867 10.7356H10.03V11.8316H11.9867V10.7356ZM14.647 6.48406V15.5873C14.647 16.1061 14.227 16.5261 13.7082 16.5261H5.57014C5.44685 16.5261 5.32478 16.5018 5.21088 16.4547C5.09698 16.4075 4.99349 16.3383 4.90631 16.2512C4.73026 16.0751 4.63135 15.8363 4.63135 15.5873V3.69294C4.63135 3.1742 5.05139 2.75415 5.57014 2.75415H10.9171V6.48406H14.647ZM12.7689 8.0753H6.50893V12.6137H12.7694V8.07472L12.7689 8.0753ZM9.24783 10.7356H7.29221V11.8316H9.24897V10.7356H9.24783Z" fill="#20A464"/>
                                                             </g>
@@ -59,7 +59,7 @@ const UseCases = () => {
                                                                 </clipPath>
                                                             </defs>
                                                         </svg>
-                                                        <div className={`text-[10px] md:text-[12px] font-sans`}>Add Sheet</div>
+                                                        <div className={`text-[12px] font-sans`}>Add Sheet</div>
                                                     </div>
                                                 ))}
                                             </div>

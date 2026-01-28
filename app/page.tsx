@@ -1,9 +1,11 @@
 import HeroSection from "@/app/components/sections/heroSection"
 import UseCases from "@/app/components/sections/useCases"
 import Integration from "@/app/components/sections/integration"
-import Integration2 from "@/app/components/sections/integration2";
-import Build from "@/app/components/sections/build";
-import Features from "@/app/components/sections/features";
+import Integration2 from "@/app/components/sections/integration2"
+import Build from "@/app/components/sections/build"
+import Features from "@/app/components/sections/features"
+import Security from "@/app/components/sections/security"
+import StartUsingAI from "@/app/components/sections/startUsingAI";
 
 export default function Home() {
     return (
@@ -14,6 +16,8 @@ export default function Home() {
             <Integration2/>
             <Build/>
             <Features/>
+            <Security/>
+            <StartUsingAI/>
         </div>
     )
 }

@@ -177,7 +177,7 @@ const Build = () => {
                     <div className="w-full lg:w-[974px] flex flex-wrap gap-[22px] justify-center">
                         {
                             contents.map((e, i) => (
-                            <div key={i} className="px-6 py-5 flex flex-col gap-y-6 items-center shadow-[0_8px_24px_rgba(0,0,0,0.12)] h-[232px] w-[310px] rounded-[16px]">
+                            <div key={i} className="px-6 py-5 flex flex-col gap-y-6 items-center shadow-[0_8px_24px_rgba(0,0,0,0.12)] min-h-[232px] w-[310px] rounded-[16px]">
                                 <div className={`p-1 h-[56px] w-[56px] bg-gray-200 rounded-2xl border border-white`}>
                                     <div className={`bg-black h-full w-full rounded-xl flex items-center justify-center`}>
                                         {e.icon}
